@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\Events;
 use Asantibanez\LivewireCalendar\LivewireCalendar;
 use Carbon\Carbon;
 use Illuminate\Support\Collection;
@@ -31,19 +32,7 @@ class AppointmentsCalendar extends LivewireCalendar
 
     public function events(): Collection
     {
-        return collect([
-            [
-                'id' => 1,
-                'title' => 'Breakfast',
-                'description' => 'Pancakes! 🥞',
-                'date' => '23-12-2024',
-            ],
-            [
-                'id' => 2,
-                'title' => 'Meeting with Pamela',
-                'description' => 'Work stuff',
-                'date' => Carbon::tomorrow(),
-            ],
-        ]);
+        $events = Events::select('id', 'title', 'description', 'date')->get();
+        return collect($events);
     }
 }

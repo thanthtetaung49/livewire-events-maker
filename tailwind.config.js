@@ -4,11 +4,14 @@ module.exports = {
     "./resources/**/*.blade.php",
     "./resources/**/*.js",
     "./resources/**/*.vue",
-    "./vendor/asantibanez/livewire-calendar/resources/views/**/*.blade.php"
+    "./vendor/asantibanez/livewire-calendar/resources/views/**/*.blade.php",
+    "./node_modules/flowbite/**/*.js"
   ],
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 }
 
