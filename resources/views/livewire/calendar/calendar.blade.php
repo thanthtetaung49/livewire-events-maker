@@ -140,22 +140,5 @@
             });
 
         })
-
-
-
-        // document.getElementById('notification').onclick = function() {
-        //     jSuites.notification({
-        //         name: 'Jsuites toast notification',
-        //         message: 'Successfully Update',
-        //     })
-        // }
-
-        // document.getElementById('notification-error').onclick = function() {
-        //     jSuites.notification({
-        //         error: 1,
-        //         name: 'Error message',
-        //         message: 'Something went wrong',
-        //     })
-        // }
     </script>
 </div>
