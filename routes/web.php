@@ -2,6 +2,7 @@
 
 use App\Http\Livewire\Calendar\Calendar;
 use App\Http\Livewire\Editor\Editor;
+use App\Http\Livewire\OrganizationChart\Chart;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,3 +22,4 @@ Route::get('/', function () {
 
 Route::get('/editor', Editor::class);
 Route::get('/calendar', Calendar::class);
+Route::get('/organization/chart', Chart::class);
